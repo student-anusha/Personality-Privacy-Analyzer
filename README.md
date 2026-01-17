@@ -39,6 +39,7 @@ Instead of tracking users invasively, the system converts browsing behavior into
 
 ![image alt](https://github.com/student-anusha/Personality-Privacy-Analyzer/blob/9df2c3d5fae9a988342baf687bf0c6edd80d4c4c/Screenshot%202026-01-17%20105724.png)
 ---
+![image alt](https://github.com/student-anusha/Personality-Privacy-Analyzer/blob/2ba030a69ec9ae0aad3f27f9ce572c2336c43ae7/Screenshot%202026-01-17%20105756.png)
 
 ## Privacy Design Principles  
 
