@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Engagement Dashboard</title>
+
+<link rel="stylesheet" href="dashboard.css" />
+<script src="libs/chart.min.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>📊 Engagement Dashboard</h1>
+      <p class="subtitle">Visual breakdown of your browsing interactions</p>
+      <button id="backBtn" class="back-btn">← Back to Analyzer</button>
+    </header>
+
+    <!-- KPI CARDS -->
+    <section class="kpi-grid">
+      <div class="kpi-card"><div class="kpi-num" id="kpiTime">0m</div><div class="kpi-label">Total Time Spent</div></div>
+      <div class="kpi-card"><div class="kpi-num" id="kpiScroll">0%</div><div class="kpi-label">Avg Scroll Depth</div></div>
+      <div class="kpi-card"><div class="kpi-num" id="kpiClicks">0</div><div class="kpi-label">Total Clicks</div></div>
+      <div class="kpi-card"><div class="kpi-num" id="kpiVisits">0</div><div class="kpi-label">Total Sites Visited</div></div>
+    </section>
+
+    <!-- Charts -->
+    <section class="charts">
+      <div class="chart-card">
+        <h2>⏱️ Time Spent Per Site</h2>
+        <canvas id="timeChart"></canvas>
+      </div>
+
+      <div class="chart-card">
+        <h2>🖱️ Click Activity Timeline</h2>
+        <canvas id="clickChart"></canvas>
+      </div>
+
+      <div class="chart-card">
+        <h2>📜 Scroll Depth Distribution</h2>
+        <canvas id="scrollChart"></canvas>
+      </div>
+
+      <div class="chart-card">
+        <h2>🌐 Categories Breakdown</h2>
+        <canvas id="categoryChart"></canvas>
+      </div>
+    </section>
+  </div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

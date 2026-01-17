@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Personality-Privacy- Analyzer",
+  "version": "1.0.0",
+  "description": "Analyze browsing history, export CSV, and show engagement dashboard.",
+  "permissions": [
+    "history",
+    "storage",
+    "downloads",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://api.openai.com/*",
+    "http://*/*",
+  "https://*/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Privacy-Personality Analyzer"
+  },
+  "content_scripts": [
+  {
+    "matches": ["http://*/*", "https://*/*"],
+    "js": ["content.js"],
+    "run_at": "document_idle"
+  }
+]
+
+}
