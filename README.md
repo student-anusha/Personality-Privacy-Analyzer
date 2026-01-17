@@ -37,7 +37,7 @@ Instead of tracking users invasively, the system converts browsing behavior into
 ├── personality_model.pkl
 └── privacy_model.pkl
 
-
+![image alt](https://github.com/student-anusha/Personality-Privacy-Analyzer/blob/9df2c3d5fae9a988342baf687bf0c6edd80d4c4c/Screenshot%202026-01-17%20105724.png)
 ---
 
 ## Privacy Design Principles  
@@ -73,4 +73,5 @@ Instead of tracking users invasively, the system converts browsing behavior into
 cd ML_ENGINE  
 python train_model.py  
 python ml_api.py  
+
 
